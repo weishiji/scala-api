@@ -1,5 +1,10 @@
 # Scala  API
 
+### 虚拟机里的共享文件同步编译的问题放到根目录里的```build.sbt```
+```
+PlayKeys.fileWatchService := play.runsupport.FileWatchService.sbt(2000)
+```
+
 This is the example project for [Making a REST API in Play](http://developer.lightbend.com/guides/play-rest-api/index.html).
 
 ## Appendix
