@@ -30,6 +30,9 @@ lazy val root = (project in file("."))
     name := """scala-stylewe-rest""",
     scalaSource in GatlingTest := baseDirectory.value / "/gatling/simulation"
   )
+// Model 的ORM
+lazy val root = (project in file("."))
+  .enablePlugins(PlayJava, PlayEbean)
 
 // Documentation for this project:
 //    sbt "project docs" "~ paradox"

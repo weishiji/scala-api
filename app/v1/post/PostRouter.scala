@@ -17,7 +17,6 @@ class PostRouter @Inject()(controller: PostController) extends SimpleRouter {
     val url = prefix / id.toString
     url.toString()
   }
-
   override def routes: Routes = {
     case GET(p"/") =>
       controller.index
