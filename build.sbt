@@ -13,13 +13,12 @@ libraryDependencies += "io.gatling" % "gatling-test-framework" % "2.2.2" % Test
 //Mysql 连接
 libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.36"
 //play-slick
-// libraryDependencies += "com.typesafe.play" %% "play-slick" % "2.0.0"
-// libraryDependencies += "com.typesafe.play" %% "play-slick-evolutions" % "2.0.0"
-// libraryDependencies += "com.h2database" % "h2" % "1.4.193"
+libraryDependencies += "com.typesafe.play" %% "play-slick" % "2.0.0"
+libraryDependencies += "com.typesafe.play" %% "play-slick-evolutions" % "2.0.0"
 
 
 //增加JDBC
-libraryDependencies += javaJdbc
+//libraryDependencies += javaJdbc
     
 // The Play project itself
 lazy val root = (project in file("."))
@@ -30,9 +29,6 @@ lazy val root = (project in file("."))
     name := """scala-stylewe-rest""",
     scalaSource in GatlingTest := baseDirectory.value / "/gatling/simulation"
   )
-// Model 的ORM
-lazy val root = (project in file("."))
-  .enablePlugins(PlayJava, PlayEbean)
 
 // Documentation for this project:
 //    sbt "project docs" "~ paradox"
