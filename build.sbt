@@ -37,4 +37,5 @@ lazy val docs = (project in file("docs")).enablePlugins(ParadoxPlugin).
   settings(
     paradoxProperties += ("download_url" -> "https://example.lightbend.com/v1/download/play-rest-api")
   )
+//Vagrant Hot Reload
 PlayKeys.fileWatchService := play.runsupport.FileWatchService.sbt(2000)
